@@ -1,0 +1,611 @@
+body{
+    margin: 0px;
+}
+/* .................Header................. */
+
+header{
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;
+    grid-template-rows: 30px;
+    background-color: black;
+    padding: 30px 60px;
+    background-image: url("images/Ornament.svg");
+    
+
+    /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover
+
+}
+
+.logo{
+    height: 41px;
+width: 170px;
+}
+
+.regbtn{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 32px;
+gap: 10px;
+width: 129px;
+height: 42px;
+background: #FFFFFF;
+border-radius: 40px;
+border: 0px;
+}
+
+a{
+    font-family: 'Nunito Sans', sans-serif;
+font-style: normal;
+text-decoration: none;
+font-weight: 400;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.header-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.regsec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/* .......................HERO SECTION............. */
+.hero{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 100px;
+    background-image: url("images/Ornament.svg");
+    
+
+    /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover
+}
+
+.hero-title{
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 900;
+font-size: 72px;
+text-align: center;
+color: #FFFFFF;
+margin-block-start: 0em;
+margin-block-end: 0em;
+}
+
+.hero-desc{
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+text-align: center;
+color: #8B8B8B;
+width: 600px;
+}
+.img-hero{
+    height: 70px;
+width: 99px;
+}
+
+.getbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 10px;
+    width: 200px;
+    height: 57px;    
+    background: #A8FF35;
+    border-radius: 40px;
+    color: #000000;
+    border: 0px;
+    font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+text-align: center;
+color: #000000;
+margin-top: 40px;
+}
+
+.btnrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-hero{
+    height: 178.24851989746094px;
+width: 1076.513916015625px;
+margin-top: 50px;
+
+
+}
+
+/* .......................................Tabs section........................... */
+.tabs{
+    background: #A8FF35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0px;
+
+}
+.tabs-title{
+    font-family: 'Nunito Sans', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+text-align: center;
+color: #000000;
+margin-block-start: 0em;
+margin-block-end: 0em;
+margin-bottom: 60px;
+}
+
+.tabimgs{
+    display:  flex;
+gap: 28px;
+align-items: center;
+}
+.divtab2{
+    height: 202px;
+width: 502px;
+border-radius: 16px;
+background-color: white;
+display:  flex;
+justify-content: center;
+align-items: center;
+}
+
+.tabgrp1{
+    height: 73px;
+width: 95px;
+}
+.tabgrp2{
+    height: 82px;
+width: 341px;
+}
+
+.tabgrp3{
+    height: 70px;
+width: 99;
+}
+
+.tab-desc{
+font-family: 'Effra';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+text-align: center;
+color: #000000;
+width: 666px;
+height: 54px;
+margin-top: 60px;
+}
+
+/* ...............................STARTUP SECTION.................. */
+.startup-text{
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+color: #000000;
+padding: 120px;
+
+}
+
+span{
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+color: #ADADAD;
+}
+
+.startup-title{
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+text-align: center;
+color: #000000;
+}
+
+.startup-image{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 120px;
+    gap: 32px;
+    padding: 0px 140px;
+    margin-bottom: 140px;
+}
+.startupimg{
+    height: 120px;
+width: 266px;
+
+
+}
+
+/* ..................................PLATFORM SECTION................... */
+
+.platforms{
+    background: #FAFAFA;
+    padding: 80px 0px;
+}
+
+.platform-title{
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+text-align: center;
+color: #000000;
+}
+
+.platform-logos{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 124px;
+    padding: 0px 140px;
+    gap: 24px;
+}
+.platform-logo{
+    height: 124px;
+width: 124px;
+}
+
+.platform-screenshot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+}
+
+.tweet1{
+    height: 274px;
+width: 800px;
+margin-top: 70px;
+}
+
+.tweet2{
+    height: 804px;
+width: 800px;
+}
+
+.tweet3{
+    height: 274px;
+width: 800px;
+
+}
+
+.trendbtn{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+gap: 10px;
+border: 0px;
+height: 57px;
+background: #000000;
+border-radius: 40px;
+font-family: 'Nunito sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+text-align: center;
+color: #FFFFFF;
+margin-top: 20px; 
+
+}
+/* ....................................Best Deals........................... */
+
+.best-deals{
+    background: #000000;
+    padding: 140px;
+}
+.deals-title{
+width: 1160px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+text-align: center;
+color: #FFFFFF;
+margin-block-start: 0em;
+margin-block-end: 0.3em;
+}
+
+.Y{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+color: #F5F5F5;
+opacity: 0.5;
+}
+.M{
+ 
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+color: #FFFFFF;
+}
+
+.tog-img{
+    height: 67px;
+width: 88px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .toggle-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color:#A8FF35;
+    ;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }  
+
+  .cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .card{
+    width: 330px;
+    height: 640px;
+    background: #FAFAFA;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+    padding-top: 24px;
+    
+
+  }
+
+  .card-title{
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+color: #000000;
+margin-block-start: 0em;
+margin-block-end: 0em;
+
+  }
+
+  .card-desc{
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+color: #000000;
+margin-block-start: 0em;
+margin-block-end: 0em;
+
+  }
+
+  .divider{
+    border: 1px solid #000000;
+width: 296px;
+opacity: 0.2; 
+margin-top: 20px;
+  }
+
+  .price{
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+color: #000000;
+margin-block-start: 0em;
+margin-block-end: 0em;
+display: flex;
+align-items: center;
+margin-top: 20px;
+  }
+
+  span.months{
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+color: #000000;
+
+  }
+
+  .listing{
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+color: #000000;
+
+
+  }
+
+  .trialbtn{
+width: 296px;
+height: 58px;
+background: #A8FF35;
+border-radius: 29px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+text-align: center;
+color: #000000;
+border:0px;
+margin-top: 150px;
+  }
+
+  .trialbtn.Premium{
+
+margin-top: 0px;
+margin-bottom: 20px;
+
+  }
+
+  .trialbtn.black{
+
+   background-color: black;
+   color: white;
+   margin-top: 100px;
+
+      }
+  .card.green{
+    background: #A8FF35;
+
+  }
+/* ..............................JOIN NOW SECTION....................... */
+.joinnow{
+    background: #A8FF35;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 110px 0px;
+    /* display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: ; */
+}
+
+.joinbtn{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+gap: 10px;
+margin-top: 40px;
+width: 180px;
+height: 57px;
+background: #000000;
+border-radius: 40px;
+color: white;
+border: 0px;
+}
+.joinTitle1{
+width: 740px;
+height: 81px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 900;
+font-size: 72px;
+text-align: center;
+color: #000000;
+margin-block-start: 0em;
+margin-block-end: 0em;
+}
+
+.joinTitle2{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+width: 740px;
+height: 81px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 900;
+font-size: 72px;
+text-align: center;
+color: #87D322;
+}
+/* .........................FOOTER SECTION ................... */
+footer{
+    display: grid;
+    grid-template-columns:  1fr 2fr ;
+        grid-template-rows: 30px;
+        padding: 30px 70px ;
+       
+    }
+    
+    .footer-logo{
+        height: 41px;
+    width: 170px;
+    
+    }
+    
+    .footer-links{
+       grid-column: 3/-1;
+        /* margin-left: 250px; */
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    
+    
+/* ...............................................................................................MOBILE VERSION..................................................................................................... */
+
