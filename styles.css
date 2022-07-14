@@ -2,7 +2,9 @@ body{
     margin: 0px;
 }
 /* .................Header................. */
-
+.mobile-header{
+    display: none;
+}
 header{
     display: grid;
     grid-template-columns:  1fr 2fr 1fr;
@@ -207,6 +209,12 @@ width: 666px;
 height: 54px;
 margin-top: 60px;
 }
+.tabgrp1mobile{
+    display: none;
+}
+.tabgrp2mobile{
+    display: none;
+}
 
 /* ...............................STARTUP SECTION.................. */
 .startup-text{
@@ -324,6 +332,7 @@ color: #FFFFFF;
 margin-top: 20px; 
 
 }
+
 /* ....................................Best Deals........................... */
 
 .best-deals{
@@ -521,6 +530,7 @@ margin-bottom: 20px;
     background: #A8FF35;
 
   }
+
 /* ..............................JOIN NOW SECTION....................... */
 .joinnow{
     background: #A8FF35;
@@ -529,10 +539,10 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 padding: 110px 0px;
-    /* display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: ; */
 }
+.tog-img-mobile{
+display: none;
+    }
 
 .joinbtn{
     display: flex;
@@ -607,5 +617,3 @@ footer{
     
     
     
-/* ...............................................................................................MOBILE VERSION..................................................................................................... */
-

@@ -1,0 +1,472 @@
+/* ...............................................................................................MOBILE VERSION..................................................................................................... */
+
+@media only screen and (max-width: 600px) { 
+    /* .............................Header Section.................... */
+    header{
+        display: none;
+    }
+    
+    .mobile-header{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url("images/Ornament2.svg");
+        background-color: #000000;
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+
+    .mobile-logo{
+        height: 40px;
+width: 40px;
+
+    }
+
+    ul {
+        display: none;
+        background-color: red;
+        
+      }
+      .input {
+        display: none;
+      }
+      .input:checked ~ ul  {
+       display: block;
+      }
+      
+      
+      .label {
+        position: relative;
+        display: block;
+        height: 15px;
+        width:  20px;
+        cursor: pointer;
+      /*   background-color: black; */
+        
+      }
+      
+      .label::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 2px;
+        width:  20px;
+        background-color: white;
+      }
+      
+      .label::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 20px;
+        background-color: white;
+      }
+
+
+
+      /* ....................>>HER0 Section......... */
+      
+      .hero{
+        background-image: url("images/Ornament2.svg");
+    }
+      .hero-title{
+        font-size: 36px;
+        margin-top: -50px;
+width: 350px;
+        }
+
+        .hero-desc{
+            font-size: 14px;
+            width: 286px;
+            }
+
+            .img-hero{
+                display: none;
+            }
+            .btn-hero{
+                display: none;
+            }
+            
+            .getbtn{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 16px 32px;
+                gap: 10px;
+                width: 200px;
+                height: 57px;    
+                background: #A8FF35;
+                border-radius: 40px;
+                color: #000000;
+                border: 0px;
+                font-family: 'Nunito Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center;
+            color: #000000;
+            margin-top: 40px;
+            }
+            
+            .btnrow{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .btn-hero{
+                height: 178.24851989746094px;
+            width: 1076.513916015625px;
+            margin-top: 50px;
+            }
+
+
+            /* .......................................Tabs section........................... */
+.tabs{
+    background: #A8FF35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0px;
+
+}
+.tabs-title{
+
+font-size: 36px;
+
+}
+
+.tabimgs{
+    display:  flex;
+gap: 28px;
+align-items: center;
+position: relative;
+}
+.divtab2{
+    height: 202px;
+width: 502px;
+border-radius: 16px;
+background-color: white;
+display:  flex;
+justify-content: center;
+align-items: center;
+}
+
+.tabgrp1{
+    display: none;
+}
+
+.divtab2{
+
+height: 118px;
+width: 339px;
+
+
+
+}
+
+.tabs{
+    position: relative;
+}
+.tabgrp1mobile{
+    /* position: absolute;
+    height: 67px;
+    width: 99px;
+   top: 180px; */
+
+   display: none;
+    }
+    .tabgrp2mobile{
+        /* position: absolute;
+        height: 67px;
+        width: 99px;
+       top: 180px; */
+    
+       display: none;
+        }
+
+.tabgrp2{
+    height: 69.93023681640625px;
+width: 291px;
+
+ }
+
+.tabgrp3{
+   display: none;
+}
+
+.tab-desc{
+font-family: 'Nunito Sans';
+width: 286px;
+font-size: 14px;
+margin-top: 60px;
+}
+
+/* ...............................STARTUP SECTION.................. */
+.startup-text{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    color: #000000;
+    padding: 18px; 
+
+    }
+    
+    span{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    color: #ADADAD;
+    width: 335px;   
+    }
+    
+    .startup-title{
+        font-size: 36px;
+        font-weight: 900;
+        text-align: center;
+        height: 86px;
+width: 370px;
+    }
+    
+    .startup-image{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 120px;
+        gap: 32px;
+        padding: 0px 18px;
+        margin-bottom: 140px; 
+    }
+    .startupimg{
+    height: 74px;
+width: 162px;
+
+    }
+
+    /* ..................................PLATFORM SECTION................... */
+
+.platforms{
+    padding: 18px;
+}
+
+.platform-title{
+width: 380px;
+font-family: "Nunito Sans";
+font-weight: 900;
+font-size: 36px;
+}
+
+.platform-logos{
+    grid-template-rows: 70px;
+    padding: 0px 18px;
+    gap: 16px;
+    overflow-x: scroll;
+    scrollbar-width: none; 
+}
+.platform-logo{
+    height: 64px;
+    width: 64px;
+    
+}
+
+.platform-screenshot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.tweet1{
+    height: 116px;
+    width: 339px;
+margin-top: 32px;
+}
+
+.tweet2{
+    height: 344px;
+    width: 339px;
+    
+}
+
+.tweet3{
+    height: 116px;
+    width: 339px;
+}
+
+.trendbtn{
+  
+padding: 16px 32px;
+font-weight: 700;
+font-size: 14px;
+height: 44px;
+width: 190px;
+padding: 12px, 24px, 12px, 24px;
+margin-bottom: 50px;
+
+}
+
+/* ....................................Best Deals........................... */
+
+.best-deals{
+    padding: 80px 18px;
+    position: relative;
+}
+
+.deals-title{
+width: 339px;
+font-weight: 900;
+font-size: 36px;
+}
+
+.Y{
+    width: 54px;
+font-size: 18px;
+margin-left: 10px;  
+
+}
+.M{
+    width: 71px;
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+
+.tog-img-mobile{
+width: 63px;
+height: 66px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 190px;
+right: 140px;
+
+}
+
+.card.one{
+    margin-top: 30px;
+}
+.tog-img{
+  display: none;
+}
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color:#A8FF35;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider.round {
+    border-radius: 34px;
+    width: 80px;
+  }
+  
+  .slider.round:before {
+    border-radius: 
+    50%;
+  }  
+
+  .cards{
+    gap: 24px;
+    flex-direction: column;
+  }
+
+  
+
+  .card-title{
+font-size: 32px;
+  }
+
+
+
+  .price{
+font-size: 60px;
+  }
+
+ 
+
+ 
+
+  
+
+
+/* ..............................JOIN NOW SECTION....................... */
+    .joinTitle1{
+        height: 40px;
+        width: 340px;
+        
+        
+    font-weight: 900;
+    font-size: 36px;
+    
+    }
+    
+    .joinTitle2{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    width: 740px;
+    height: 81px;
+    
+    font-size: 36px;
+}
+
+.joinbtn{
+
+margin-top: 0px;
+height: 44px;
+width: 130px;
+border-radius: 40px;
+padding: 12px, 24px, 12px, 24px;
+
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+text-align: center;
+color: #FFFFFF;
+}
+
+/* .........................FOOTER SECTION ................... */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    }
+
+    .footer-links{
+        margin-top: 60px;
+      background-color: white;
+        flex-direction: column;
+    }
+    
+    
+    
+
+ }
