@@ -147,6 +147,10 @@ margin-top: 50px;
 
 }
 
+.hero-tabs{
+    display: none;
+}
+
 /* .......................................Tabs section........................... */
 .tabs{
     background: #A8FF35;

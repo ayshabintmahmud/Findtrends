@@ -24,49 +24,106 @@ width: 40px;
 
     }
 
-    ul {
-        display: none;
-        background-color: red;
-        
-      }
-      .input {
-        display: none;
-      }
-      .input:checked ~ ul  {
-       display: block;
-      }
-      
-      
-      .label {
-        position: relative;
-        display: block;
-        height: 15px;
-        width:  20px;
+    
+    label .menu {
+        position: absolute;
+        right: -100px;
+        top: -100px;
+        z-index: 100;
+        width: 200px;
+        height: 150px;
+        background: black;
+        border-radius: 50% 50% 50% 50%;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        box-shadow: 0 0 0 0 black, 0 0 0 0 black;
         cursor: pointer;
-      /*   background-color: black; */
         
-      }
-      
-      .label::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 2px;
-        width:  20px;
-        background-color: white;
-      }
-      
-      .label::after{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        width: 20px;
-        background-color: white;
       }
 
+      label .hamburger {
+        position: absolute;
+        top: 135px;
+        left: 50px;
+        width: 30px;
+        height: 2px;
+        background: white;
+        display: block;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+      }
+      
+       label .hamburger:before {
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: white;
+      }
+      
+      label .hamburger:before { top: -10px; }
+      
+      label .hamburger:after { bottom: -10px; }
+      
+      label input { display: none; }
+      
+      label input:checked + .menu {
+        box-shadow: 0 0 0 100vw black, 0 0 0 60vh black;
+        border-radius: 0;
+        
+      }
+      
+      label input:checked + .menu .hamburger {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        
+      }
+      
+      label input:checked + .menu .hamburger:after {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        bottom: 0;
+        
+      }
+      
+      label input:checked + .menu .hamburger:before {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        top: 0;
+        
+      }
+      
+      label input:checked + .menu + ul { opacity: 1; }
+      
+      label ul {
+        z-index: 200;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        -webkit-transition: .25s 0s ease-in-out;
+        transition: .25s 0s ease-in-out;
+      }
+      
+      label a {
+        margin-bottom: 1em;
+        display: block;
+        font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+text-align: center;
+color: #FFFFFF;
+        text-decoration: none;
+      }
+      
 
 
       /* ....................>>HER0 Section......... */
@@ -77,7 +134,7 @@ width: 40px;
       .hero-title{
         font-size: 36px;
         margin-top: -50px;
-width: 350px;
+        width: 350px;
         }
 
         .hero-desc{
@@ -127,6 +184,50 @@ width: 350px;
             margin-top: 50px;
             }
 
+            .hero-tabs{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 40px;
+                margin-bottom: 150px;
+    
+            }
+            .herotab1{
+                width: 350px;
+                height: 90px;
+                transform: rotate(-4deg);  
+                z-index: 10;
+            }
+
+            .herotab2{
+                position: absolute;
+                width: 350px;
+                height: 90px;
+                left: 48px;
+                top: 535px;
+                transform: rotate(-4deg);
+                z-index: 8;
+            }
+
+            .herotab3{
+                width: 350px;
+                height: 90px;
+                transform: rotate(-3deg);
+                position: absolute;
+                left: 48px;
+                top: 600px;
+                z-index: 6;
+            }
+
+            .herotab4{
+                position: absolute;
+                left: 48px;
+                top: 665px;
+                width: 350px;
+                height: 90px;
+                transform: rotate(-4deg);
+            }
 
             /* .......................................Tabs section........................... */
 .tabs{
@@ -469,4 +570,5 @@ footer{
     
     
 
- }
+ 
+}
